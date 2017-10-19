@@ -1,4 +1,6 @@
 <?php
+http_response_code(200);
+
 echo "Hello LINE BOT!!!";
 echo "<BR>";
 echo $_ENV["LINEBOT_ACCESS_TOKEN"];
