@@ -70,14 +70,7 @@ foreach ($client->parseEvents() as $event) {
                             array(
                               'type' => 'text',
                               'text' => $message['text']
-                            )
-                          )
-                    ));
-
-                    /*
-                    $client->replyMessage(array(
-                        'replyToken' => $event['replyToken'],
-                        'messages' => array(
+                            ),
                             array(
                               'type': 'location',
                               'title': 'my location',
@@ -85,9 +78,8 @@ foreach ($client->parseEvents() as $event) {
                               'latitude': 35.65910807942215,
                               'longitude': 139.70372892916203
                             )
-                        )
+                          )
                     ));
-                    */
                     break;
                 default:
                     error_log("Unsupporeted message type: " . $message['type']);
