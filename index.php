@@ -1,5 +1,6 @@
 <?php
 
+/*
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV["LINEBOT_ACCESS_TOKEN"]);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $_ENV["LINEBOT_CHANNEL_SECRET"]]);
 
@@ -12,7 +13,7 @@ foreach ($events as $event) {
   $bot->replyMessage($event->getReplyToken(), $outputText);
 
 }
-
+*/
 echo $_ENV["LINEBOT_ACCESS_TOKEN"];
 echo $_ENV["LINEBOT_CHANNEL_SECRET"];
 
