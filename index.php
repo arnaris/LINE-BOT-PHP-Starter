@@ -159,7 +159,7 @@ foreach ($client->parseEvents() as $event) {
                                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
                                             'action' => array(
                                                   'type' => 'uri',
-                                                  'label' => 'Full ariticle',
+                                                  'label' => 'Full article',
                                                   'uri' => 'http://www.google.com'
                                             )
                                         )
