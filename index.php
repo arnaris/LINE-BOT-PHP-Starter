@@ -75,14 +75,16 @@ foreach ($client->parseEvents() as $event) {
                           )
                     ));
                     */
+
+                    /*
                     $client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
-                                'type' => 'template', // 訊息類型 (模板)
-                                'altText' => 'Example buttons template', // 替代文字
+                                'type' => 'template',
+                                'altText' => 'Carousel template',
                                 'template' => array(
-                                    'type' => 'carousel', // 類型 (旋轉木馬)
+                                    'type' => 'carousel',
                                     'columns' => array(
                                         array(
                                             'thumbnailImageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg', // 圖片網址 <不一定需要>
@@ -133,6 +135,42 @@ foreach ($client->parseEvents() as $event) {
                             )
                         )
                     ));
+                    */
+
+                    $client->replyMessage(array(
+                        'replyToken' => $event['replyToken'],
+                        'messages' => array(
+                            array(
+                                'type' => 'template',
+                                'altText' => 'Carousel template',
+                                'template' => array(
+                                    'type' => 'image_carousel',
+                                    'columns' => array(
+                                        array(
+                                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
+                                            'actions' => array(
+                                                array(
+                                                  "type": "uri",
+                                                  "label": "View detail",
+                                                  "uri": "http://example.com/page/222"
+                                                )
+                                            )
+                                        ),
+                                        array(
+                                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
+                                            'actions' => array(
+                                                array(
+                                                  "type": "uri",
+                                                  "label": "View detail",
+                                                  "uri": "http://example.com/page/222"
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    ));              
 
 
                     break;
