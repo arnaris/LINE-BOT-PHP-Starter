@@ -152,7 +152,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'text' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg'
+                                                  'uri' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg'
                                             )
                                         ),
                                         array(
@@ -160,7 +160,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full ariticle',
-                                                  'text' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg'
+                                                  'uri' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg'
                                             )
                                         )
                                     )
