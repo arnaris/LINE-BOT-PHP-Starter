@@ -66,54 +66,25 @@ foreach ($client->parseEvents() as $event) {
                             array(
                               'type' => 'text',
                               'text' => $message['text']
-                              )
+                            ),
+                            array(
+                              'type' => 'text',
+                              'text' => $message['text']
+                            )                            
                           )
                     ));
-                    
+
                     $client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
-
-                              /*
-                              'type' => 'text',
-                              'text' => $message['text']
-                              */
-
                               'type': 'location',
                               'title': 'my location',
                               'address': '〒150-0002 東京都渋谷区渋谷２丁目２１−１',
                               'latitude': 35.65910807942215,
                               'longitude': 139.70372892916203
-
-
-                                /*
-                                "type" => "template",
-                                "altText" => "this is a image carousel template",
-                                "template" => array(
-                                    "type" => "image_carousel",
-                                    "columns" => array(
-                                        array(
-                                          "imageUrl" => "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
-                                          "action" => array(
-                                            "type" => "uri",
-                                            "label" => "View detail",
-                                            "uri" => "http://example.com/page/222"
-                                          )
-                                        ),
-                                        array(
-                                          "imageUrl" => "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
-                                          "action" => array(
-                                            "type" => "uri",
-                                            "label" => "View detail",
-                                            "uri" => "http://example.com/page/222"
-                                          )
-                                        )
-                                    )
-                                )
-                                */
-                              )
-                          )
+                            )
+                        )
                     ));
                     break;
                 default:
