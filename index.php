@@ -150,9 +150,9 @@ foreach ($client->parseEvents() as $event) {
                                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
                                             'actions' => array(
                                                 array(
-                                                  "type": "uri",
-                                                  "label": "View detail",
-                                                  "uri": "http://example.com/page/222"
+                                                  'type' => 'message',
+                                                  'label' => 'Yes',
+                                                  'text' => 'yes'
                                                 )
                                             )
                                         ),
@@ -160,9 +160,9 @@ foreach ($client->parseEvents() as $event) {
                                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
                                             'actions' => array(
                                                 array(
-                                                  "type": "uri",
-                                                  "label": "View detail",
-                                                  "uri": "http://example.com/page/222"
+                                                  'type' => 'message',
+                                                  'label' => 'Yes',
+                                                  'text' => 'yes'
                                                 )
                                             )
                                         )
@@ -170,7 +170,7 @@ foreach ($client->parseEvents() as $event) {
                                 )
                             )
                         )
-                    ));              
+                    ));
 
 
                     break;
