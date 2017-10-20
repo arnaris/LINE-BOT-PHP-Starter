@@ -69,41 +69,39 @@ foreach ($client->parseEvents() as $event) {
                                 'text' => $message['text']
                             */
 
-                            "type": "template",
-                            "altText": "this is a image carousel template",
-                            "template": {
-                                "type": "image_carousel",
-                                "columns": [
-                                    {
-                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
-                                      "action": {
-                                        "type": "uri",
-                                        "label": "View detail",
-                                        "uri": "http://example.com/page/222"
-                                      }
-                                    },
-                                    {
-                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
-                                      "action": {
-                                        "type": "uri",
-                                        "label": "View detail",
-                                        "uri": "http://example.com/page/222"
-                                      }
-                                    },
-                                    {
-                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
-                                      "action": {
-                                        "type": "uri",
-                                        "label": "View detail",
-                                        "uri": "http://example.com/page/222"
-                                      }
-                                    }
-                                ]
-                            }
-
-
-                            )
-                        )
+                                "type" => "template",
+                                "altText" => "this is a image carousel template",
+                                "template"=> array(
+                                    "type" => "image_carousel",
+                                    "columns" => array(
+                                        {
+                                          "imageUrl" => "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                          "action" => array(
+                                            "type" => "uri",
+                                            "label" => "View detail",
+                                            "uri" => "http://example.com/page/222"
+                                          )
+                                        },
+                                        {
+                                          "imageUrl" => "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                          "action" => array(
+                                            "type" => "uri",
+                                            "label" => "View detail",
+                                            "uri" => "http://example.com/page/222"
+                                          )
+                                        },
+                                        {
+                                          "imageUrl" => "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                          "action" => array(
+                                            "type" => "uri",
+                                            "label" => "View detail",
+                                            "uri" => "http://example.com/page/222"
+                                          )
+                                        }
+                                    )
+                                )
+                              )
+                          )
                     ));
                     break;
                 default:
