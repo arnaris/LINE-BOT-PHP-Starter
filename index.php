@@ -49,6 +49,8 @@ if (!is_null($events['events'])) {
 }
 */
 
+use LINE\LINEBot;
+use LINE\LINEBot\HTTPClient\CurlHTTPClient;
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV["LINEBOT_ACCESS_TOKEN"]);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $_ENV["LINEBOT_CHANNEL_SECRET"]]);
@@ -66,7 +68,7 @@ try {
 }
 foreach ($events as $event) {
   $outputText = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("text message");
-  $bot->replyMessage($event->getReplyToken(), $outputText);    
+  $bot->replyMessage($event->getReplyToken(), $outputText);
 }
 
 
