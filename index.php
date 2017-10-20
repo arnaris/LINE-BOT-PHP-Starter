@@ -50,34 +50,36 @@ if (!is_null($events['events'])) {
 */
 
 
-use LINE\LINEBot;
-use LINE\LINEBot\HTTPClient\CurlHTTPClient;
-use LINE\LINEBot\Constant\HTTPHeader;
-use LINE\LINEBot\Event\MessageEvent;
-use LINE\LINEBot\Event\MessageEvent\TextMessage;
-use LINE\LINEBot\MessageBuilder\TextMessageBuilder;
-use LINE\LINEBot\Exception\InvalidEventRequestException;
-use LINE\LINEBot\Exception\InvalidSignatureException;
-
-
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV["LINEBOT_ACCESS_TOKEN"]);
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $_ENV["LINEBOT_CHANNEL_SECRET"]]);
-$signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
-try {
-  $events = $bot->parseEventRequest(file_get_contents('php://input'), $signature);
-} catch(\LINE\LINEBot\Exception\InvalidSignatureException $e) {
-  error_log('parseEventRequest failed. InvalidSignatureException => '.var_export($e, true));
-} catch(\LINE\LINEBot\Exception\UnknownEventTypeException $e) {
-  error_log('parseEventRequest failed. UnknownEventTypeException => '.var_export($e, true));
-} catch(\LINE\LINEBot\Exception\UnknownMessageTypeException $e) {
-  error_log('parseEventRequest failed. UnknownMessageTypeException => '.var_export($e, true));
-} catch(\LINE\LINEBot\Exception\InvalidEventRequestException $e) {
-  error_log('parseEventRequest failed. InvalidEventRequestException => '.var_export($e, true));
-}
-foreach ($events as $event) {
-  $outputText = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("text message");
-  $bot->replyMessage($event->getReplyToken(), $outputText);
-}
+require_once('./LINEBotTiny.php');
+$channelAccessToken = $_ENV["LINEBOT_ACCESS_TOKEN"];
+$channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
+$client = new LINEBotTiny($channelAccessToken, $channelSecret);
+foreach ($client->parseEvents() as $event) {
+    switch ($event['type']) {
+        case 'message':
+            $message = $event['message'];
+            switch ($message['type']) {
+                case 'text':
+                    $client->replyMessage(array(
+                        'replyToken' => $event['replyToken'],
+                        'messages' => array(
+                            array(
+                                'type' => 'text',
+                                'text' => $message['text']
+                            )
+                        )
+                    ));
+                    break;
+                default:
+                    error_log("Unsupporeted message type: " . $message['type']);
+                    break;
+            }
+            break;
+        default:
+            error_log("Unsupporeted event type: " . $event['type']);
+            break;
+    }
+};
 
 
 echo "OK";
