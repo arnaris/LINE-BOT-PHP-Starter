@@ -137,7 +137,7 @@ foreach ($client->parseEvents() as $event) {
                     ));
                     */
 
-                    /*
+
                     $client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
@@ -149,22 +149,18 @@ foreach ($client->parseEvents() as $event) {
                                     'columns' => array(
                                         array(
                                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
-                                            'actions' => array(
-                                                array(
+                                            'action' => array(
                                                   'type' => 'message',
                                                   'label' => 'Yes',
                                                   'text' => 'yes'
-                                                )
                                             )
                                         ),
                                         array(
                                             'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
-                                            'actions' => array(
-                                                array(
+                                            'action' => array(
                                                   'type' => 'message',
                                                   'label' => 'Yes',
                                                   'text' => 'yes'
-                                                )
                                             )
                                         )
                                     )
@@ -172,7 +168,9 @@ foreach ($client->parseEvents() as $event) {
                             )
                         )
                     ));
-                    */
+
+
+                    /*
                     $client->replyMessage(array(
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
@@ -183,6 +181,7 @@ foreach ($client->parseEvents() as $event) {
                             )
                         )
                     ));
+                    */
 
                     break;
                 default:
