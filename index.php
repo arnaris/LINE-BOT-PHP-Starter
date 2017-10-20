@@ -64,8 +64,44 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
+                            /*
                                 'type' => 'text',
                                 'text' => $message['text']
+                            */
+
+                            "type": "template",
+                            "altText": "this is a image carousel template",
+                            "template": {
+                                "type": "image_carousel",
+                                "columns": [
+                                    {
+                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                      "action": {
+                                        "type": "uri",
+                                        "label": "View detail",
+                                        "uri": "http://example.com/page/222"
+                                      }
+                                    },
+                                    {
+                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                      "action": {
+                                        "type": "uri",
+                                        "label": "View detail",
+                                        "uri": "http://example.com/page/222"
+                                      }
+                                    },
+                                    {
+                                      "imageUrl": "http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-san-francisco.jpg?itok=MdRJm2Zo",
+                                      "action": {
+                                        "type": "uri",
+                                        "label": "View detail",
+                                        "uri": "http://example.com/page/222"
+                                      }
+                                    }
+                                ]
+                            }
+
+
                             )
                         )
                     ));
