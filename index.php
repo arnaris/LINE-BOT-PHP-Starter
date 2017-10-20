@@ -64,14 +64,14 @@ foreach ($client->parseEvents() as $event) {
                         'replyToken' => $event['replyToken'],
                         'messages' => array(
                             array(
-                            /*
-                                'type' => 'text',
-                                'text' => $message['text']
-                            */
+                              'type' => 'text',
+                              'text' => $message['text']
 
+
+                                /*
                                 "type" => "template",
                                 "altText" => "this is a image carousel template",
-                                "template"=> array(
+                                "template" => array(
                                     "type" => "image_carousel",
                                     "columns" => array(
                                         array(
@@ -92,6 +92,7 @@ foreach ($client->parseEvents() as $event) {
                                         )
                                     )
                                 )
+                                */
                               )
                           )
                     ));
