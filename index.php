@@ -49,6 +49,8 @@ if (!is_null($events['events'])) {
 }
 */
 
+require_once '../vendor/autoload.php';
+
 use LINE\LINEBot;
 use LINE\LINEBot\HTTPClient\CurlHTTPClient;
 use LINE\LINEBot\Constant\HTTPHeader;
