@@ -202,7 +202,7 @@ foreach ($client->parseEvents() as $event) {
 
 
 $client->pushMessage(array(
-		'to' => ($groupID == "") ? $userID, $groupID,
+		'to' => ($groupID == "") ? $userID : $groupID,
 		'messages' => array(
 			array(
 				'type' => 'text',
