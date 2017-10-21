@@ -206,7 +206,7 @@ $client->pushMessage(array(
 		'messages' => array(
 			array(
 				'type' => 'text',
-				'text' => 'Test push message' . $userID
+				'text' => 'Test push message | ' . $userID . ' | ' . $groupID
 		   )
 		 )
    )
