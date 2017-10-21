@@ -196,6 +196,19 @@ foreach ($client->parseEvents() as $event) {
 };
 
 
+$client->pushMessage(array(
+    'messages' => array(
+        array(
+          'type' => 'text',
+          'text' => 'push text #1'
+        ),
+        array(
+          'type' => 'text',
+          'text' => 'push text #2'
+        )
+      )
+));
+
 echo "OK";
 
 ?>
