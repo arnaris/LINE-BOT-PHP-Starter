@@ -58,7 +58,7 @@ $userID = "";
 $groupID = "";
 foreach ($client->parseEvents() as $event) {
     $userID = $event['source']['userId'];
-    $groupID = $event['source']['groupID'];
+    $groupID = $event['source']['groupId'];
     switch ($event['type']) {
         case 'message':
             $message = $event['message'];
