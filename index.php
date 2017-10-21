@@ -208,11 +208,13 @@ $client->pushMessage(array(
 		'messages' => array(
 			array(
 				'type' => 'text',
-				'text' => 'Test push message | ' . $userID . ' | ' . $groupID
+				'text' => 'Test push message | ' . $userID . ' | ' . $groupID . ' | ' . $roomID
 		   )
 		 )
    )
 );
+
+error_log('ID: ' . $userID . ' | ' . $groupID . ' | ' . $roomID);
 
 echo "OK";
 
