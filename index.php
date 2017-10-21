@@ -54,7 +54,9 @@ require_once('./LINEBotTiny.php');
 $channelAccessToken = $_ENV["LINEBOT_ACCESS_TOKEN"];
 $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
+$userID = "";
 foreach ($client->parseEvents() as $event) {
+    $userID = $event['source']['userId'];
     switch ($event['type']) {
         case 'message':
             $message = $event['message'];
@@ -197,17 +199,15 @@ foreach ($client->parseEvents() as $event) {
 
 
 $client->pushMessage(array(
-    'messages' => array(
-        array(
-          'type' => 'text',
-          'text' => 'push text #1'
-        ),
-        array(
-          'type' => 'text',
-          'text' => 'push text #2'
-        )
-      )
-));
+		'to' => $userID,
+		'messages' => array(
+			array(
+				'type' => 'text',
+				'text' => 'Test push message' . $userID
+		   )
+		 )
+   )
+);
 
 echo "OK";
 
