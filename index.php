@@ -56,9 +56,11 @@ $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userID = "";
 $groupID = "";
+$roomID = "";
 foreach ($client->parseEvents() as $event) {
     $userID = $event['source']['userId'];
     $groupID = $event['source']['groupId'];
+    $roomID = $event['source']['roomId'];
     switch ($event['type']) {
         case 'message':
             $message = $event['message'];
@@ -202,7 +204,7 @@ foreach ($client->parseEvents() as $event) {
 
 
 $client->pushMessage(array(
-		'to' => ($groupID == "") ? $userID : $groupID,
+		'to' => ($groupID == "" && $roomID == "") ? $userID : (($groupID == "") ? $roomID : $groupID),
 		'messages' => array(
 			array(
 				'type' => 'text',
