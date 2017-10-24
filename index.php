@@ -154,7 +154,7 @@ foreach ($client->parseEvents() as $event) {
                                     'type' => 'image_carousel',
                                     'columns' => array(
                                         array(
-                                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
+                                            'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/001.png',
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
@@ -162,7 +162,31 @@ foreach ($client->parseEvents() as $event) {
                                             )
                                         ),
                                         array(
-                                            'imageUrl' => 'https://api.reh.tw/line/bot/example/assets/images/example.jpg',
+                                            'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/002.png',
+                                            'action' => array(
+                                                  'type' => 'uri',
+                                                  'label' => 'Full article',
+                                                  'uri' => 'http://www.google.com'
+                                            )
+                                        ),
+                                        array(
+                                            'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/003.png',
+                                            'action' => array(
+                                                  'type' => 'uri',
+                                                  'label' => 'Full article',
+                                                  'uri' => 'http://www.google.com'
+                                            )
+                                        ),
+                                        array(
+                                            'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/004.png',
+                                            'action' => array(
+                                                  'type' => 'uri',
+                                                  'label' => 'Full article',
+                                                  'uri' => 'http://www.google.com'
+                                            )
+                                        ),
+                                        array(
+                                            'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/005.png',
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
