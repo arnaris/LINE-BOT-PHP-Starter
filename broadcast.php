@@ -11,7 +11,7 @@ $client->pushMessage(array(
     'messages' => array(
         array(
             'type' => 'template',
-            'altText' => 'Carousel template',
+            'altText' => 'Weekly market intelligence',
             'template' => array(
                 'type' => 'image_carousel',
                 'columns' => array(
