@@ -158,7 +158,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'uri' => 'http://www.google.com'
+                                                  'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=623'
                                             )
                                         ),
                                         array(
@@ -166,7 +166,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'uri' => 'http://www.google.com'
+                                                  'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=622'
                                             )
                                         ),
                                         array(
@@ -174,7 +174,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'uri' => 'http://www.google.com'
+                                                  'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=620'
                                             )
                                         ),
                                         array(
@@ -182,7 +182,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'uri' => 'http://www.google.com'
+                                                  'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=632'
                                             )
                                         ),
                                         array(
@@ -190,7 +190,7 @@ foreach ($client->parseEvents() as $event) {
                                             'action' => array(
                                                   'type' => 'uri',
                                                   'label' => 'Full article',
-                                                  'uri' => 'http://www.google.com'
+                                                  'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=614'
                                             )
                                         )
                                     )
