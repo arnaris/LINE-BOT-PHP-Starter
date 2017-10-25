@@ -4,7 +4,7 @@ require_once('./LINEBotTiny.php');
 $channelAccessToken = $_ENV["LINEBOT_ACCESS_TOKEN"];
 $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
-$to = "C170833769a7e867e2278595f4c0be96e";
+$to = "R9bf96e170c4d75c57390c1b21dc458c0";
 
 $client->pushMessage(array(
 		'to' => $to,
