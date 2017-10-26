@@ -1,8 +1,5 @@
 {
   "require" : {
-    "aws/aws-sdk-php": "*"
-  },
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "3.3.*"
+    "aws/aws-sdk-php": "3.3.*"
   }
 }
