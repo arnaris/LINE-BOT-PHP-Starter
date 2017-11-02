@@ -3,7 +3,7 @@
 require_once('./LINEBotTiny.php');
 $channelAccessToken = $_ENV["LINEBOT_ACCESS_TOKEN"];
 $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
-$client = new LINEBotTiny($channelAccessToken, $channelSecret);
+$bot = new LINEBotTiny($channelAccessToken, $channelSecret);
 
 $userID = "R9bf96e170c4d75c57390c1b21dc458c0";
 
