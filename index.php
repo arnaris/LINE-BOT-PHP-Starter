@@ -29,7 +29,7 @@ foreach ($client->parseEvents() as $event) {
     }
 };
 
-error_log('ID: ' . $userID . ' | ' . $groupID . ' | ' . $roomID);
+error_log('******* ID: ' . $userID . ' | ' . $groupID . ' | ' . $roomID);
 echo "OK";
 
 ?>
