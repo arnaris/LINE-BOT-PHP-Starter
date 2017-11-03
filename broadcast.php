@@ -4,7 +4,7 @@ require_once('./LINEBotTiny.php');
 $channelAccessToken = $_ENV["LINEBOT_ACCESS_TOKEN"];
 $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
-$to = "R9bf96e170c4d75c57390c1b21dc458c0";
+$to = "C1bf97c635541efd0d001ecbffd684625";
 
 $client->pushMessage(array(
 		'to' => $to,
@@ -91,7 +91,7 @@ $client->pushMessage(array(
                         'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171103/010.png',
                         'action' => array(
                               'type' => 'uri',
-                              'label' => 'Full article',
+                              'label' => 'Visit',
                               'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/'
                         )
                     )
