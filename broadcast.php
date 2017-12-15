@@ -16,13 +16,21 @@ $client->pushMessage(array(
                 'type' => 'image_carousel',
                 'columns' => array(
                     array(
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0792.png',
+                        'action' => array(
+                              'type' => 'uri',
+                              'label' => 'Full article',
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=792'
+                        )
+                    ),
+										array(
                         'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0793.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
                               'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=793'
                         )
-                    ),
+										),
                     array(
                         'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0807.png',
                         'action' => array(
@@ -69,14 +77,6 @@ $client->pushMessage(array(
                               'type' => 'uri',
                               'label' => 'Full article',
                               'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=806'
-                        )
-										),
-                    array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0792.png',
-                        'action' => array(
-                              'type' => 'uri',
-                              'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=792'
                         )
 										),
                     array(
