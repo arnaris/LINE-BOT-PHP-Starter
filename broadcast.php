@@ -16,69 +16,61 @@ $client->pushMessage(array(
                 'type' => 'image_carousel',
                 'columns' => array(
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0792.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0835.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=792'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=835'
                         )
                     ),
 										array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0793.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0836.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=793'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=836'
                         )
 										),
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0807.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0828.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=807'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=828'
                         )
                     ),
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0798.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0829.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=798'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=829'
                         )
                     ),
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0802.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0831.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=802'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=831'
                         )
 										),
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0801.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0815.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=801'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=815'
                         )
 										),
                     array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0808.png',
+                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171228/0816.png',
                         'action' => array(
                               'type' => 'uri',
                               'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=808'
+                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=816'
                         )
 											),
-                    array(
-                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171215/0806.png',
-                        'action' => array(
-                              'type' => 'uri',
-                              'label' => 'Full article',
-                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID=806'
-                        )
-										),
                     array(
                         'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/20171103/010.png',
                         'action' => array(
