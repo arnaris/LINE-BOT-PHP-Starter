@@ -36,12 +36,12 @@ if ($_POST["formSubmit"] == "yes") {
 
 			//$to = "C1bf97c635541efd0d001ecbffd684625";
 			$to = "R9bf96e170c4d75c57390c1b21dc458c0";
-			echo "Status: Real message sent";
+			echo "<div style='margin:15px'>Status: Real message sent</div>";
 
 		} else {
 
 			$to = "R9bf96e170c4d75c57390c1b21dc458c0";
-			echo "Status: Test message sent";
+			echo "<div style='margin:15px'>Status: Test message sent</div>";
 		}
 
 
@@ -87,10 +87,10 @@ if ($_POST["formSubmit"] == "yes") {
 		        )
 		    )
 		));
-		
+
 	} else {
 
-		echo "Status: Wrong password";
+		echo "<div style='margin:15px'>Status: Wrong password</div>";
 
 	}
 }
