@@ -62,6 +62,8 @@ if ($_POST["formSubmit"] == "yes") {
 
 		if (count($columns)>0) {
 
+			echo "<div style='margin:15px'>Status: ".count($columns)." ".$_POST['type']." message(s) sent</div>";
+
 			array_push($columns, array(
 				                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/NewsPic/0000.png',
 				                        'action' => array(
@@ -86,6 +88,10 @@ if ($_POST["formSubmit"] == "yes") {
 			        )
 			    )
 			));
+
+		} else {
+
+			echo "<div style='margin:15px'>Status: No news ID filled. Nothing sent.</div>";
 
 		}
 
