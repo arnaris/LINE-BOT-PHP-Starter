@@ -47,12 +47,21 @@ if ($_POST["formSubmit"] == "yes") {
 		}
 
 
+		$columns = array();
+
 		for($i=1;$i<9;$i++) {
 			if ($_POST[$i] != "") {
-				echo trim($_POST[$i]);
+				$temp = array(
+									'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/NewsPic/'.$_POST[$i].'.png',
+									'action' => array(
+												'type' => 'uri',
+												'label' => 'Full article',
+												'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID='.ltrim($_POST[$i],"0")
+										));
 			}
 		}
 
+		echo '<pre>'; print_r($array); echo '</pre>';
 
 
 		/*
