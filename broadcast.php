@@ -58,11 +58,11 @@ if ($_POST["formSubmit"] == "yes") {
 												'label' => 'Full article',
 												'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/SitePages/article.aspx?NewListID='.ltrim($_POST[$i],"0")
 										));
-				array_push($column,$temp);
+				array_push($columns,$temp);
 			}
 		}
 
-		echo '<pre>'; print_r($array); echo '</pre>';
+		echo '<pre>'; print_r($columns); echo '</pre>';
 
 
 		/*
