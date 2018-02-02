@@ -70,23 +70,24 @@ if ($_POST["formSubmit"] == "yes") {
 				                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/'
 				                        )
 				                    ));
+
+			//echo '<pre>'; print_r($columns); echo '</pre>';
+
+			$client->pushMessage(array(
+					'to' => $to,
+			    'messages' => array(
+			        array(
+			            'type' => 'template',
+			            'altText' => 'Weekly market intelligence',
+			            'template' => array(
+			                'type' => 'image_carousel',
+			                'columns' => $columns
+			            )
+			        )
+			    )
+			));
+
 		}
-
-		//echo '<pre>'; print_r($columns); echo '</pre>';
-
-		$client->pushMessage(array(
-				'to' => $to,
-		    'messages' => array(
-		        array(
-		            'type' => 'template',
-		            'altText' => 'Weekly market intelligence',
-		            'template' => array(
-		                'type' => 'image_carousel',
-		                'columns' => $columns
-		            )
-		        )
-		    )
-		));
 
 	} else {
 
