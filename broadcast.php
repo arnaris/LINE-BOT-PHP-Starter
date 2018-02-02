@@ -19,8 +19,6 @@
 		<div style="margin: 15px;"><input type="submit" value="Submit"></div>
 		<input type="hidden" name="formSubmit" value="yes">
 	</form>
-</div>
-
 
 <?php
 
@@ -72,7 +70,6 @@ if ($_POST["formSubmit"] == "yes") {
 				                              'uri' => 'https://scbcorp.sharepoint.com/sites/scbthinktank/'
 				                        )
 				                    ));
-
 		}
 
 		//echo '<pre>'; print_r($columns); echo '</pre>';
@@ -90,8 +87,7 @@ if ($_POST["formSubmit"] == "yes") {
 		        )
 		    )
 		));
-
-
+		
 	} else {
 
 		echo "Status: Wrong password";
@@ -100,3 +96,5 @@ if ($_POST["formSubmit"] == "yes") {
 }
 
 ?>
+
+</div>
