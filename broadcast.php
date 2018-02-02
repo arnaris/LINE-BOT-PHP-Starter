@@ -6,7 +6,7 @@ $channelSecret = $_ENV["LINEBOT_CHANNEL_SECRET"];
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $to = "";
 
-if ($_POST("formSubmit") == "yes") {
+if ($_POST["formSubmit"] == "yes") {
 
 	if ($_POST['type'] == "real") {
 
