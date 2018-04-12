@@ -34,7 +34,7 @@ if ($_POST["formSubmit"] == "yes") {
 
 		if ($_POST['type'] == "real") {
 
-			$to = "C1bf97c635541efd0d001ecbffd684625";
+				$to = "C1bf97c635541efd0d001ecbffd684625";
 			//$to = "R9bf96e170c4d75c57390c1b21dc458c0";
 
 		} else {
@@ -49,7 +49,7 @@ if ($_POST["formSubmit"] == "yes") {
 		for($i=1;$i<9;$i++) {
 			if ($_POST[$i] != "") {
 				$temp = array(
-									'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/NewsPic/'.$_POST[$i].'.png',
+									'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktankyuki/NewsPic/'.$_POST[$i].'.png',
 									'action' => array(
 												'type' => 'uri',
 												'label' => 'Full article',
@@ -64,7 +64,7 @@ if ($_POST["formSubmit"] == "yes") {
 			echo "<div style='margin:15px'>Status: ".count($columns)." ".$_POST['type']." message(s) sent</div>";
 
 			array_push($columns, array(
-				                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktank-assets/NewsPic/0000.png',
+				                        'imageUrl' => 'https://s3-ap-southeast-1.amazonaws.com/thinktankyuki/NewsPic/0000.png',
 				                        'action' => array(
 				                              'type' => 'uri',
 				                              'label' => 'Visit',
